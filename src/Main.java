@@ -8,9 +8,11 @@ public class Main {
 
         String separator = File.separator;
         Launch launch = new Launch();
+        String yourFolder = "pics";
+
         String username = "sergeyisw";
-        String extension = ".jpg";
-        launch.launchMooving(separator,username,extension);
+        String extension = ".png";
+        launch.launchMooving(separator,username,extension,yourFolder);
 
     }
 

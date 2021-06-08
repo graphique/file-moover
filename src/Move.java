@@ -5,6 +5,7 @@ import java.util.List;
 public class Move {
 
    String separator = File.separator;
+   Namer namer = new Namer();
 
     public  void moveFiles(File destinationFolder, File sourceFolder, List<File> newList) {
 
@@ -18,7 +19,7 @@ public class Move {
             if (newList != null) {
                 for (File child : newList) {
                     // Move files to destination folder
-                    child.renameTo(new File(destinationFolder + separator + child.getName()));
+                    child.renameTo(new File(destinationFolder + separator + child.getName()+ namer.getRanDomName()));
                 }
             }
         } else {

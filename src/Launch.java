@@ -8,11 +8,11 @@ public class Launch {
     Ext ext = new Ext();
     Move move = new Move();
 
-    public void launchMooving (String separator, String username, String extension) {
+    public void launchMooving (String separator, String username, String extension, String folder) {
 
 
         String path =   separator + "Users" + separator + username + separator +"Desktop";
-        File destinationFolder = new File(path + separator + "pics");
+        File destinationFolder = new File(path + separator + folder);
 
         File sourceFolder = new File(path);
 
