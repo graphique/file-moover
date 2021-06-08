@@ -19,7 +19,7 @@ public class Move {
             if (newList != null) {
                 for (File child : newList) {
                     // Move files to destination folder
-                    child.renameTo(new File(destinationFolder + separator + child.getName()+ namer.getRanDomName()));
+                    child.renameTo(new File(destinationFolder + separator + " " + namer.getRanDomName() + child.getName()));
                 }
             }
         } else {
