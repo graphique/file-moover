@@ -11,7 +11,7 @@ public class Launch {
     public void launchMooving (String separator, String username, String extension, String folder) {
 
 
-        String path =   separator + "Users" + separator + username + separator +"Desktop";
+        String path = "C:" +  separator + "Users" + separator + username + separator +"Desktop";
         File destinationFolder = new File(path + separator + folder);
 
         File sourceFolder = new File(path);
